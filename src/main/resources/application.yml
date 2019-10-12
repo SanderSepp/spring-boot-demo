@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demoservice
+server:
+  port: 9091
+logging:
+  file: /home/sander/Documents/projects/demo_app/logs/app.log
+
+---
+spring:
+  profiles: prod
+  application:
+    name: demoservice prod
+server:
+  port: 9090
